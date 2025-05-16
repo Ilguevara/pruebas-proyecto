@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.layout.HBox?>
+<StackPane prefHeight="1080.0" prefWidth="1920.0" styleClass="root" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mivalgamer.app.Controllers.InicioController">
+
+    <!-- Capa de fondo: Imagen -->
+    <ImageView fitHeight="1080.0" fitWidth="1920.0" preserveRatio="true">
+        <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDOPRINCIPAL.jpg" />
+    </ImageView>
+
+    <AnchorPane>
+        <AnchorPane prefHeight="1080.0" prefWidth="268.0" styleClass="menu-container">
+            
+            <!-- Logo principal -->
+            <StackPane layoutX="35.0" layoutY="75.0" prefHeight="27.0" prefWidth="178.0">
+                <ImageView fitHeight="24.0" fitWidth="178.0" styleClass="logos">
+                    <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOMIVALGAMER.png" />
+                </ImageView>
+            </StackPane>
+
+            <HBox layoutX="35.0" layoutY="145.0" spacing="6" alignment="CENTER_LEFT" >
+                <ImageView fitHeight="22.0" fitWidth="22.0" preserveRatio="true">
+                    <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBUSCAR.png" />
+                </ImageView>
+                <TextField promptText="¿Qué deseas buscar?" prefWidth="150"/>
+            </HBox>
+            <!-- Botón Biblioteca -->
+            <Button layoutX="35.0" layoutY="195.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBIBLIOTECA.png" />
+                    </ImageView>
+                </graphic>
+                Biblioteca
+            </Button>
+
+            <!-- Botón Plataforma -->
+            <Button layoutX="35.0" layoutY="255.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOPLATAFORMAS.png" />
+                    </ImageView>
+                </graphic>
+                Plataforma
+            </Button>
+
+            <!-- Botón Inicio -->
+            <Button layoutX="35.0" layoutY="315.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOINICIO.png" />
+                    </ImageView>
+                </graphic>
+                Inicio
+            </Button>
+
+
+        </AnchorPane>
+    </AnchorPane>
+</StackPane>

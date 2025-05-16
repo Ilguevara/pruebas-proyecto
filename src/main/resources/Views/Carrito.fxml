@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" style="-fx-font-family: 'Museo Sans'" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="1080" fitWidth="1920">
+       <image>
+           <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/VIDEOJUEGOS/THE+LAST+OF+US+PARTE+2/PORTADA.jpg" />
+       </image>
+       </ImageView>
+
+      <Pane prefHeight="1080" prefWidth="277" styleClass="barralateral">
+         <children>
+
+             <!-- IMAGEN FONDO -->
+
+            <ImageView fitHeight="25.0" fitWidth="200.0" layoutX="17.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/ICONOS+INTERFACES/LOGOMIVALGAMER.png" />
+                </image>
+            </ImageView>
+
+             <!-- LOGO BIBLIOTECA -->
+
+            <Button layoutX="15.0" layoutY="167.0" mnemonicParsing="false" styleClass="transparentetexto">
+               <graphic>
+                    <ImageView fitHeight="17" fitWidth="23" preserveRatio="true">
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBIBLIOTECA.png" />
+                    </ImageView>
+               </graphic>
+             </Button>
+            <Button layoutX="50.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" styleClass="transparentebotones" textFill="WHITE">
+               <graphic>
+                  <TextField styleClass="transparentetexto" text="Biblioteca">
+                     <font>
+                        <Font name="MuseoSans-700" size="18.0" />
+                     </font>
+                  </TextField>
+               </graphic></Button>
+
+             <!-- LOGO INICIO -->
+
+             <Button layoutX="15.0" layoutY="110.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="20.0" styleClass="transparentetexto">
+                 <graphic>
+                     <ImageView fitHeight="20.0" fitWidth="24.0" preserveRatio="true">
+                         <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/ICONOS+INTERFACES/LOGOINICIO.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button layoutX="50.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" styleClass="transparentebotones" textFill="WHITE">
+                 <graphic>
+                     <TextField styleClass="transparentetexto" text="Inicio">
+                         <font>
+                             <Font name="MuseoSans-700" size="18.0" />
+                         </font>
+                     </TextField>
+                 </graphic></Button>
+
+             <!-- LOGO HISTORIAL DE COMPRAS -->
+
+             <Button layoutX="15.0" layoutY="224.0" mnemonicParsing="false" styleClass="transparentetexto">
+                 <graphic>
+                     <ImageView fitHeight="19.0" fitWidth="24.0" preserveRatio="true">
+                         <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/ICONOS+INTERFACES/HISTORIALCOMPRAS.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button layoutX="50.0" layoutY="216.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="220.0" styleClass="transparentebotones" textFill="WHITE">
+                 <graphic>
+                     <TextField accessibleRole="BUTTON" styleClass="transparentetexto" text="Historial de Compras">
+                         <font>
+                             <Font name="MuseoSans-700" size="18.0" />
+                         </font>
+                     </TextField>
+                 </graphic></Button>
+
+             <!-- LOGO MI CARRITO -->
+
+             <Button layoutX="15.0" layoutY="281.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="20.0" styleClass="transparentetexto">
+                 <graphic>
+                     <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="24.0" preserveRatio="true">
+                         <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/ICONOS+INTERFACES/MICARRITO1.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button layoutX="50.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" styleClass="transparentebotones" textFill="WHITE">
+                 <graphic>
+                     <TextField styleClass="transparentetexto" text="Mi Carrito">
+                         <font>
+                             <Font name="MuseoSans-700" size="18.0" />
+                         </font>
+                     </TextField>
+                 </graphic></Button>
+
+         </children></Pane>
+
+       <!-- BARRA CENTRAL -->
+
+      <Pane layoutX="340.0" layoutY="180.0" prefHeight="866" prefWidth="1545" styleClass="barracentral">
+         <children>
+            <VBox fx:id="carritoVBox" layoutX="30.0" layoutY="30.0" prefHeight="799.0" prefWidth="1053.0" spacing="10" styleClass="barracentralint" />
+            <Pane layoutX="1115.0" layoutY="80.0" prefHeight="145.0" prefWidth="400.0" styleClass="barracentralint" />
+            <Pane layoutX="1115.0" layoutY="250.0" prefHeight="145.0" prefWidth="400.0" styleClass="barracentralint" />
+            <TextField layoutX="1100.0" layoutY="16.0" styleClass="transparentetexto" text="Metodos de Pago">
+               <font>
+                  <Font name="MuseoSans-900" size="30.0" />
+               </font>
+            </TextField>
+            <Button layoutX="1112.0" layoutY="749.0" prefHeight="74.0" prefWidth="407.0" styleClass="pay-button" text="Pagar Ahora" />
+            <VBox fx:id="carritoVBox1" layoutX="40.0" layoutY="740.0" prefHeight="5.0" prefWidth="1030.0" spacing="10" styleClass="barracentralint" />
+         </children></Pane>
+      <TextField layoutX="310.0" prefHeight="205.0" prefWidth="543.0" styleClass="transparentetexto" text="Mi Carrito">
+         <font>
+            <Font name="MuseoSans-900" size="63.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="410.0" layoutY="250.0">
+         <image>
+             <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/VIDEOJUEGOS/THE+LAST+OF+US+PARTE+2/ICONO.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="540.0" layoutY="260.0" styleClass="transparentetexto" text="The Last of Us Part II">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="540.0" layoutY="300.0" styleClass="transparentetextoopaco" text="Naughty Dog">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="410.0" layoutY="410.0">
+         <image>
+             <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/VIDEOJUEGOS/UNTIL+DAWN/ICONO.png" />
+         </image>
+   </ImageView>
+      <TextField layoutX="540.0" layoutY="420.0" styleClass="transparentetexto" text="Unitl Dawn">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="540.0" layoutY="460.0" styleClass="transparentetextoopaco" text="Ballistic Moon">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="410.0" layoutY="570.0">
+         <image>
+             <Image url="https://mival-gamer.s3.us-east-2.amazonaws.com/CONTENIDO+VISUAL+COMPLETO/VIDEOJUEGOS/GOD+OF+WAR+RAGNAROK/ICONO.png" />
+         </image>
+   </ImageView>
+      <TextField layoutX="540.0" layoutY="580.0" styleClass="transparentetexto" text="God of War Ragnarok">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="540.0" layoutY="620.0" styleClass="transparentetextoopaco" text="Santa Monica Studio">
+         <font>
+            <Font name="MuseoSans-900" size="22.0" />
+         </font>
+      </TextField>
+      <ImageView />
+      <TextField layoutX="1224.0" layoutY="290.0" prefHeight="42.0" prefWidth="161.0" styleClass="transparentetextoopaco" text="\$ 180.000,00">
+         <font>
+            <Font name="MuseoSans-500" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1224.0" layoutY="440.0" prefHeight="42.0" prefWidth="161.0" styleClass="transparentetextoopaco" text="\$ 219.000,00">
+         <font>
+            <Font name="MuseoSans-500" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1224.0" layoutY="600.0" prefHeight="42.0" prefWidth="161.0" styleClass="transparentetextoopaco" text="\$ 219.000,00">
+         <font>
+            <Font name="MuseoSans-500" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="380.0" layoutY="935.0" prefHeight="66.0" prefWidth="185.0" styleClass="transparentetexto" text="Subtotal">
+         <font>
+            <Font name="MuseoSans-900" size="33.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1207.0" layoutY="945.0" prefHeight="45.0" prefWidth="185.0" styleClass="transparentetextoopaco" text="\$ 219.000,00">
+         <font>
+            <Font name="MuseoSans-900" size="24.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1460.0" layoutY="265.0" prefHeight="42.0" prefWidth="185.0" styleClass="transparentetextoopaco" text="Tarjeta Credito">
+         <font>
+            <Font name="MuseoSans-500" size="23.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1460.0" layoutY="330.0" prefHeight="42.0" prefWidth="185.0" styleClass="transparentetextoopaco" text="Juan Perez">
+         <font>
+            <Font name="MuseoSans-500" size="23.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1460.0" layoutY="357.0" prefHeight="44.0" prefWidth="252.0" styleClass="transparentetextoopaco" text="****1234; exp: 06/28">
+         <font>
+            <Font name="MuseoSans-500" size="23.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="1600.0" layoutY="440.0" prefHeight="122.0" prefWidth="120.0" styleClass="transparentetextoopaco" text="+">
+         <font>
+            <Font name="MuseoSans-900" size="64.0" />
+         </font>
+      </TextField>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mivalgamer.app.Controllers.MainController"
+            prefHeight="1080.0" prefWidth="1920.0" minHeight="768.0" minWidth="1024.0">
+  <stylesheets>
+    <URL value="@Estilos.css" />
+  </stylesheets>
+
+  <!-- Capa de fondo: Imagen -->
+  <ImageView fitHeight="1080.0" fitWidth="1920.0" preserveRatio="true">
+    <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDOPLATAFORMAS-15.jpg" />
+  </ImageView>
+
+  <HBox styleClass="header">
+    <children>
+      <Label styleClass="title" text="Plataformas" HBox.hgrow="NEVER" />
+      <HBox styleClass="user-container" HBox.hgrow="ALWAYS" />
+    </children>
+  </HBox>
+
+  <!-- Left Sidebar -->
+  <left>
+    <VBox styleClass="sidebar" VBox.vgrow="ALWAYS">
+      <HBox styleClass="logo">
+        <ImageView fitHeight="50" fitWidth="150" preserveRatio="true" styleClass="logo-image">
+          <image>
+            <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOMIVALGAMER.png" />
+          </image>
+        </ImageView>
+      </HBox>
+      <HBox styleClass="search-bar">
+        <ImageView fitHeight="14" fitWidth="14" styleClass="icon">
+          <image>
+            <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBUSCAR.png" />
+          </image>
+        </ImageView>
+        <TextField promptText="Qué deseas buscar?" />
+      </HBox>
+
+      <VBox styleClass="menu">
+        <HBox onMouseClicked="#handleBackButton" styleClass="menu-item">
+          <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
+            <image>
+              <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/back.png" />
+            </image>
+          </ImageView>
+          <Label text="Volver" textFill="WHITE" />
+        </HBox>
+
+        <HBox styleClass="menu-item">
+          <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
+            <image>
+              <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOINICIO.png" />
+            </image>
+          </ImageView>
+          <Label text="Inicio" textFill="WHITE" />
+        </HBox>
+
+        <HBox styleClass="menu-item, active">
+          <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
+            <image>
+              <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOPLATAFORMAS.png" />
+            </image>
+          </ImageView>
+          <Label text="Plataformas" textFill="WHITE" />
+        </HBox>
+
+        <HBox styleClass="menu-item" onMouseClicked="#handleBibliotecaClick">
+          <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
+            <image>
+              <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBIBLIOTECA.png" />
+            </image>
+          </ImageView>
+          <Label text="Biblioteca" textFill="WHITE" />
+        </HBox>
+      </VBox>
+    </VBox>
+  </left>
+
+  <!-- Main Content -->
+  <center>
+    <StackPane styleClass="main-content">
+      <VBox>
+        <HBox prefWidth="1280.0" styleClass="header">
+          <Label styleClass="title" text="      Plataformas" textFill="WHITE" />
+        </HBox>
+
+        <GridPane hgap="10" styleClass="platforms-grid" vgap="10">
+          <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+          </rowConstraints>
+
+          <!-- PlayStation Card -->
+          <StackPane fx:id="playstationCard" onMouseClicked="#handlePlatformClick" styleClass="platform-card, playstation" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <StackPane styleClass="card-content">
+              <ImageView fitHeight="400" fitWidth="600" preserveRatio="false" styleClass="platform-images">
+                <image>
+                  <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDOPLAYSTATION-15.jpg" />
+                </image>
+              </ImageView>
+              <HBox styleClass="platform-logo">
+
+              </HBox>
+            </StackPane>
+          </StackPane>
+
+          <!-- Xbox Card -->
+          <StackPane onMouseClicked="#handlePlatformClick" styleClass="platform-card, xbox" GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="xboxCard">
+            <StackPane styleClass="card-content">
+              <ImageView fitHeight="400" fitWidth="600" preserveRatio="false" styleClass="platform-images">
+                <image>
+                  <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDOXBOX-15.jpg" />
+                </image>
+              </ImageView>
+              <HBox styleClass="platform-logo">
+              </HBox>
+            </StackPane>
+          </StackPane>
+
+          <!-- Nintendo Card -->
+          <StackPane fx:id="nintendoCard" onMouseClicked="#handlePlatformClick" styleClass="platform-card, nintendo" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <StackPane styleClass="card-content">
+              <ImageView fitHeight="400" fitWidth="600" preserveRatio="false" styleClass="platform-images">
+                <image>
+                  <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDONINTENDO-15.jpg" />
+                </image>
+              </ImageView>
+              <HBox styleClass="platform-logo">
+              </HBox>
+            </StackPane>
+          </StackPane>
+
+          <!-- PC Card -->
+          <StackPane fx:id="pcCard" onMouseClicked="#handlePlatformClick" styleClass="platform-card, pc" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <StackPane styleClass="card-content">
+              <ImageView fitHeight="400" fitWidth="600" preserveRatio="false" styleClass="platform-images">
+                <image>
+                  <Image url="@../RecursosGlobales/imagenes segun interfaces/fondos/FONDOPC-15.jpg" />
+                </image>
+              </ImageView>
+              <HBox styleClass="platform-logo">
+              </HBox>
+            </StackPane>
+          </StackPane>
+        </GridPane>
+
+        <!-- Aquí va el FlowPane para las tarjetas de juegos -->
+        <FlowPane fx:id="gamesFlowPane"
+                  hgap="20"
+                  vgap="20"
+                  prefWrapLength="1280"
+                  styleClass="games-flow" 
+                  alignment="CENTER" 
+                  VBox.vgrow="ALWAYS" />
+      </VBox>
+    </StackPane>
+  </center>
+
+  <!-- Cart Section -->
+  <right>
+    <VBox styleClass="cart-section">
+      <HBox styleClass="cart-header">
+        <ImageView fitHeight="24" fitWidth="24" styleClass="icon">
+          <image>
+            <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/MICARRITO2.png" />
+          </image>
+        </ImageView>
+        <Label text="Carrito" />
+      </HBox>
+
+      <VBox fx:id="cartItems" styleClass="cart-content">
+        <Label styleClass="cart-empty" text="Aun no has agregado juegos a tu carrito" />
+      </VBox>
+
+      <VBox styleClass="cart-summary">
+        <HBox styleClass="cart-total">
+          <Label text="Total:" />
+          <Label fx:id="totalAmount" styleClass="total-amount" text="0.00" />
+        </HBox>
+        <Button styleClass="checkout-button" text="Procesar pago" />
+      </VBox>
+    </VBox>
+  </right>
+
+
+</BorderPane>

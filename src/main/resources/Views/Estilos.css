@@ -1,0 +1,289 @@
+/* =============================
+   Login and Register
+   ============================= */
+
+/* -- General (fuente y espaciado global) -- */
+.root {
+    -fx-font-family: "Museo Sans";
+    -fx-padding: 5vw 10vw;
+}
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 700px) {
+    .root {
+        -fx-padding: 10px !important;
+    }
+    .login-container {
+        -fx-padding: 0 8 !important;
+        -fx-background-radius: 40px !important;
+    }
+    .logo-text-part1, .logo-text-part2 {
+        -fx-font-size: 32px !important;
+    }
+    .login-title {
+        -fx-font-size: 15px !important;
+    }
+}
+
+/* -- Pesos de fuente Museo Sans -- */
+.museo-900 { -fx-font-family: "Museo Sans 900"; }
+.museo-700 { -fx-font-family: "Museo Sans 700"; }
+.museo-500 { -fx-font-family: "Museo Sans 500"; }
+.museo-300 { -fx-font-family: "Museo Sans 300"; }
+.museo-100 { -fx-font-family: "Museo Sans 100"; }
+
+/* -- Tamaños de texto -- */
+.text-small { -fx-font-size: 14px; }
+.text-medium { -fx-font-size: 18px; }
+.text-large { -fx-font-size: 24px; }
+.text-xlarge { -fx-font-size: 32px; }
+.text-xxlarge { -fx-font-size: 48px; }
+
+/* -- Contenedor Login -- */
+.login-container {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 40px;
+    -fx-padding: 0 48;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+.register-container {
+    -fx-padding: 10 0 0 0;
+}
+
+/* -- Logo -- */
+.logo-text-part1 {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(220, 220, 220);
+}
+.logo-text-part2 {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* -- Textos principales -- */
+.welcome-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+    -fx-padding: 10 0 0 0;
+}
+.login-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 0 0 10 0;
+}
+
+/* -- Campos de formulario -- */
+.input-field {
+    -fx-background-color: rgba(58, 58, 58, 0.85);
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.55);
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+.input-field:focused {
+    -fx-border-color: #94B4C1;
+    -fx-border-width: 2px;
+    -fx-border-radius: 4px;
+}
+
+/* -- Botón principal -- */
+.login-button {
+    -fx-background-color: linear-gradient(to right, #c026d3, #af1c1c);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 40px;
+    -fx-cursor: hand;
+    -fx-min-width: 100%;
+}
+.login-button:hover {
+    -fx-background-color: linear-gradient(to right, #a21caf, #8f1919);
+}
+
+/* -- Enlaces en registro -- */
+.register-container Label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.register-container Hyperlink {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}
+.register-container Hyperlink:hover {
+    -fx-text-fill: #547792;
+}
+
+/* -- Utilidades (alineación, margen, sombra) -- */
+.text-center { -fx-text-alignment: center; -fx-alignment: center; }
+.text-right { -fx-text-alignment: right; -fx-alignment: center-right; }
+.margin-bottom { -fx-margin-bottom: 10px; }
+.padding-standard { -fx-padding: 10px; }
+.shadow-light { -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2); }
+.shadow-medium { -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); }
+
+/* =============================
+   End Login and Register
+   ============================= */
+
+
+/* =============================
+   InicioPlataforma
+   ============================= */
+
+.menu-container {
+    -fx-background-color: rgba(73, 72, 72, 0.5);
+    -fx-background-radius: 10px;
+    -fx-padding: 0 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.logos {
+    -fx-padding: 0 0 0 0;
+
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-graphic-text-gap: 16px;
+    -fx-padding: 8px 0;
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: #c026d3;
+}
+
+/* =============================
+   GameCard (Tarjetas de Videojuegos)
+   ============================= */
+.game-card {
+    -fx-background-color: #222B38;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 18 18 18 18;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.12), 8, 0, 0, 4);
+    -fx-max-width: 220px;
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.game-card .image-view {
+    -fx-effect: dropshadow(gaussian, #121924BB, 8, 0.45, 0, 3);
+    -fx-background-radius: 12px;
+}
+
+#imgIcono {
+    -fx-background-radius: 8px;
+    -fx-padding: 4;
+}
+
+#imgPortada {
+    -fx-background-radius: 12px;
+    -fx-padding: 6;
+}
+
+#lblTitulo {
+    -fx-font-size: 1.15em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FAFAFA;
+    -fx-padding: 6 0 0 0;
+}
+
+#lblPrecio {
+    -fx-font-size: 1.05em;
+    -fx-font-weight: 600;
+    -fx-text-fill: #A5C64E;
+    -fx-padding: 0 0 8px 0;
+}
+
+#btnVerDetalles {
+    -fx-background-color: linear-gradient(to right, #38405A 60%, #516EA2 100%);
+    -fx-text-fill: #FAFAFA;
+    -fx-background-radius: 22px;
+    -fx-border-radius: 22px;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+    -fx-padding: 7 16 7 16;
+    -fx-effect: dropshadow(two-pass-box, #00114522, 6, 0.45, 0, 2);
+    -fx-transition: background-color 0.2s;
+}
+
+#btnVerDetalles:hover {
+    -fx-background-color: linear-gradient(to right, #516EA2 70%, #A5C64E 100%);
+    -fx-text-fill: #fff;
+}
+
+/* FlowPane de tarjetas */
+#flowPane {
+    -fx-padding: 30 20 30 20;
+    -fx-background-color: transparent;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+    -fx-alignment: center;
+}
+
+/* ---- ---- CARRITO Y VIDEOJUEGO ---- ---- */
+
+.pay-button {
+    -fx-background-color: linear-gradient(to right, #00cc66, #33cc33);
+    -fx-text-fill: white;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+}
+
+.pay-button:hover {
+    -fx-background-color: linear-gradient(to right, #00b359, #29a329);
+}
+/*-----pruebavisual-----*/
+.barralateral{
+    -fx-background-color: #00000059; /* negro con 35% de opacidad */
+}
+.barracentral{
+    -fx-background-color: #00000059; /* negro con 35% de opacidad */
+    -fx-background-radius: 10px;
+}
+.barracentralint{
+    -fx-background-color: #FFFFFF0D; /* blanco con 5% de opacidad */
+    -fx-background-radius: 10px;
+}
+.transparentetexto {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #cccccc; /* Color del texto de sugerencia (promptText) */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent; /* Opcional: quita bordes */
+}
+.transparentetextoopaco {
+    -fx-text-fill: rgba(255, 255, 255, 0.5); /* blanco con 50% de opacidad */
+    -fx-background-color: transparent;       /* fondo totalmente transparente */
+}
+.transparentebotones {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.transpartentebotones:hover {}
+.lista-juegos {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+.texto-descripcion {
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-font-size: 14px;
+}
+
+
+
