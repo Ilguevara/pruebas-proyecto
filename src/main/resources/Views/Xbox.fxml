@@ -19,7 +19,8 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mivalgamer.app.Controllers.PlataformasController">
     <stylesheets>
-        <URL value="@Estilos.css" />
+        <URL value="@playstation-styles.css" />
+        <URL value="@styles.css" />
     </stylesheets>
 
     <!-- Capa de fondo: Imagen -->
@@ -149,7 +150,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/alien-isolation.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/ALIEN.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -164,7 +165,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/fc25.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/FC25.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -179,7 +180,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/gears.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/GEARS5.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -194,7 +195,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/halo-infinite.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/halo-infinite.jpg" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -209,7 +210,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/hellblade-2.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/HALLBLADE2.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -224,7 +225,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/mortal-kombat-11.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MORTALKOMBAT11.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -240,7 +241,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/minecraft.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MINECRAFT.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -255,7 +256,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/ori-and-the-blind-forest.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/ORI.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -270,7 +271,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/starfield.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/STARFIELD.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -285,7 +286,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/the-master-chief-collection.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MCC.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -300,7 +301,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/indiana-jones-the-great-circle.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/INDIANAJONES.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -315,7 +316,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/dark-souls.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/DARKSOULS.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -341,7 +342,7 @@
             <HBox styleClass="cart-header">
                 <ImageView fitHeight="24" fitWidth="24" styleClass="icon">
                     <image>
-                        <Image url="@icons/shopping-cart.png" />
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/MICARRITO2.png" />
                     </image>
                 </ImageView>
                 <Label text="Carrito" />

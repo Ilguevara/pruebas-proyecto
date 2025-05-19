@@ -1,6 +1,5 @@
 package mivalgamer.app;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +14,15 @@ public class Videojuego {
     private final double precioOriginal;
     private final boolean descuentoAplicado;
     private final EstadoVideojuego estado;
-    private final List<String> icono;
-    private final List<String> portada;
-    private final List<String> contenidoVisual;
+    private final String icono;
+    private final String portada;
+    private final String contenidoVisual;
     private final int stock;
 
-    // En el constructor:
     public Videojuego(long idVideojuego, String titulo, String estudio, long idGenero,
                       String descripcion, double precio, double precioOriginal,
                       boolean descuentoAplicado, EstadoVideojuego estado,
-                      List<String> icono, List<String> portada, List<String> contenidoVisual, int stock) {
+                      String icono, String portada, String contenidoVisual, int stock) {
         this.idVideojuego = idVideojuego;
         this.titulo = titulo;
         this.estudio = estudio;
@@ -42,19 +40,19 @@ public class Videojuego {
 
     public static Videojuego fromResultSet(Connection conn, ResultSet rs) throws SQLException {
         return new Videojuego(
-            rs.getLong("id_videojuego"),
-            rs.getString("titulo"),
-            rs.getString("estudio"),
-            rs.getLong("id_genero"),
-            rs.getString("descripcion"),
-            rs.getDouble("precio"),
-            rs.getDouble("precio_original"),
-            rs.getBoolean("descuento_aplicado"),
-            EstadoVideojuego.fromString(rs.getString("estado")),
-            parseJsonList(rs.getString("icono")),
-            parseJsonList(rs.getString("portada")),
-            parseJsonList(rs.getString("contenido_visual")),
-            rs.getInt("stock")
+                rs.getLong("id_videojuego"),
+                rs.getString("titulo"),
+                rs.getString("estudio"),
+                rs.getLong("id_genero"),
+                rs.getString("descripcion"),
+                rs.getDouble("precio"),
+                rs.getDouble("precio_original"),
+                rs.getBoolean("descuento_aplicado"),
+                EstadoVideojuego.fromString(rs.getString("estado")),
+                rs.getString("icono"),
+                rs.getString("portada"),
+                rs.getString("contenido_visual"),
+                rs.getInt("stock")
         );
     }
 
@@ -133,9 +131,9 @@ public class Videojuego {
     public double getPrecioOriginal() { return precioOriginal; }
     public boolean isDescuentoAplicado() { return descuentoAplicado; }
     public EstadoVideojuego getEstado() { return estado; }
-    public List<String> getIcono() { return icono; }
-    public List<String> getPortada() { return portada; }
-    public List<String> getContenidoVisual() { return contenidoVisual; }
+    public String getIcono() { return icono; }
+    public String getPortada() { return portada; }
+    public String getContenidoVisual() { return contenidoVisual; }
     public int getStock() { return stock; }
 
     /**
@@ -143,10 +141,5 @@ public class Videojuego {
      */
     public List<Plataforma> obtenerPlataformas(Connection conn) throws SQLException {
         return Plataforma.obtenerPorVideojuego(conn, this.idVideojuego);
-    }
-
-    private static List<String> parseJsonList(String json) {
-        if (json == null || json.isEmpty()) return new ArrayList<>();
-        return new Gson().fromJson(json, new com.google.gson.reflect.TypeToken<List<String>>(){}.getType());
     }
 }

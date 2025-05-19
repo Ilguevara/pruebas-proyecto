@@ -101,7 +101,7 @@ public class MainController implements Initializable {
     private void navigateToPc() {
         try {
             System.out.println("Intentando navegar a PC...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/Pc.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/com/example/mivalgamer/MivalGamerPc.fxml");
             System.out.println("Navegación a PC completada");
         } catch (Exception e) {
             System.err.println("Error al cargar la vista de PC: " + e.getMessage());
@@ -112,7 +112,7 @@ public class MainController implements Initializable {
     private void navigateToNintendo() {
         try {
             System.out.println("Intentando navegar a Nintendo...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/Nintendo.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/com/example/mivalgamer/MivalGamerNintendo.fxml");
             System.out.println("Navegación a Nintendo completada");
         } catch (Exception e) {
             System.err.println("Error al cargar la vista de Nintendo: " + e.getMessage());
@@ -123,7 +123,7 @@ public class MainController implements Initializable {
     private void navigateToXbox() {
         try {
             System.out.println("Intentando navegar a Xbox...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/Xbox.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/com/example/mivalgamer/MivalGamerXbox.fxml");
             System.out.println("Navegación a Xbox completada");
         } catch (Exception e) {
             System.err.println("Error al cargar la vista de Xbox: " + e.getMessage());
@@ -134,7 +134,7 @@ public class MainController implements Initializable {
     private void navigateToPlayStation() {
         try {
             System.out.println("Intentando navegar a PlayStation...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/PlayStation.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/com/example/mivalgamer/MivalGamerPlayStation.fxml");
             System.out.println("Navegación a PlayStation completada");
         } catch (Exception e) {
             System.err.println("Error al cargar la vista de PlayStation: " + e.getMessage());
@@ -210,7 +210,7 @@ public class MainController implements Initializable {
     public void handleBackButton(MouseEvent event) {
         try {
             System.out.println("Volviendo a la vista principal...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/Main.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/Views/Main.fxml");
             System.out.println("Regreso a la vista principal completado");
         } catch (Exception e) {
             System.err.println("Error al volver a la vista principal: " + e.getMessage());
@@ -234,3 +234,4 @@ public class MainController implements Initializable {
         }
     }
 }
+

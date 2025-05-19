@@ -17,7 +17,8 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mivalgamer.app.Controllers.PlataformasController">
     <stylesheets>
-        <URL value="@Estilos.css" />
+        <URL value="@playstation-styles.css" />
+        <URL value="@styles.css" />
     </stylesheets>
 
     <!-- Capa de fondo: Imagen -->
@@ -132,7 +133,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/mario-kart-8-deluxe.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/mario-kart-8-deluxe.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -147,7 +148,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/luigis-mansion-3.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/LUIGIMANSION3.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -162,7 +163,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/metroid-dread.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/METROIDREAD.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -177,7 +178,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/mortal-kombat-1.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MORTALKOMBAT1.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -192,7 +193,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-mario-3d-world.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MARIO3DWORLD.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -207,7 +208,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-mario-bros-wonder.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MARIOPARTYJAMBOREE.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -223,7 +224,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-mario-maker-2.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MARIOMAKER2.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -238,7 +239,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-mario-odyssey.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/ODYSSEY.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -253,7 +254,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-smash-bros-ultimate.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/SUPERSMASHULTIMATE.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -268,7 +269,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/cuphead.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/CUPHEAD.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -283,7 +284,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/super-mario-party-jamboree.png" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MARIOPARTYJAMBOREE.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -297,7 +298,7 @@
                         <StackPane>
                             <ImageView fitHeight="180" fitWidth="180" preserveRatio="false">
                                 <image>
-                                    <Image url="@images/games/minecraft.jpg" />
+                                    <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MINECRAFT.png" />
                                 </image>
                             </ImageView>
                         </StackPane>
@@ -323,7 +324,7 @@
             <HBox styleClass="cart-header">
                 <ImageView fitHeight="24" fitWidth="24" styleClass="icon">
                     <image>
-                        <Image url="@icons/shopping-cart.png" />
+                        <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/MICARRITO2.png" />
                     </image>
                 </ImageView>
                 <Label text="Carrito" />

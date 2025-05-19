@@ -1,0 +1,335 @@
+/* Estilos específicos para la interfaz de PlayStation */
+
+/* Scroll Styles */
+.main-content-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-fit-to-width: false;
+    -fx-hbar-policy: AS_NEEDED;
+}
+
+.main-content-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.main-content-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-opacity: 0.6;
+}
+
+.main-content-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Platform Header */
+.platform-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 15;
+    -fx-padding: 0 0 20 0;
+}
+
+.playstation-logo {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 2, 0, 0, 0);
+}
+
+.nintendo-logo {
+    -fx-padding: 0;
+
+
+}
+
+.platform-title {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Museo Sans';
+}
+
+/* Featured Game */
+.featured-game > HBox {
+    -fx-fill-width: true;
+    -fx-min-width: 1000px;
+    -fx-pref-width: 1200px;
+}
+
+.featured-info {
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: center-left;
+    -fx-min-width: 800px;
+    -fx-pref-width: 1000px;
+}
+
+.featured-title {
+    -fx-text-fill: white;
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Museo Sans';
+    -fx-wrap-text: true;
+}
+
+.game-category {
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 16px;
+    -fx-font-family: 'Museo Sans';
+}
+
+.game-description {
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+    -fx-font-size: 14px;
+    -fx-line-spacing: 5;
+    -fx-wrap-text: true;
+    -fx-font-family: 'Museo Sans';
+    -fx-max-width: 800px;
+    -fx-pref-width: 800px;
+}
+
+.featured-image {
+    -fx-translate-x: 300;
+    -fx-translate-y: -30;
+    -fx-fit-width: 500;
+    -fx-fit-height: 350;
+    -fx-preserve-ratio: true;
+}
+
+/* Pagination */
+.pagination {
+    -fx-spacing: 5;
+    -fx-padding: 10 0 0 0;
+    -fx-alignment: center-left;
+}
+
+.dot {
+    -fx-fill: rgba(255, 255, 255, 0.3);
+    -fx-cursor: hand;
+}
+
+.dot.active {
+    -fx-fill: white;
+}
+
+/* Games Grid */
+.games-grid {
+    -fx-padding: 10;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+}
+
+.game-card {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-background-radius: 10;
+    -fx-padding: 0 0 10 0;
+    -fx-spacing: 5;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+    -fx-min-width: 180;
+    -fx-max-width: 180;
+    -fx-min-height: 220;
+    -fx-max-height: 220;
+}
+
+.game-card:hover {
+    -fx-translate-y: -5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.game-card ImageView {
+    -fx-fit-width: 180;
+    -fx-fit-height: 180;
+    -fx-preserve-ratio: false;
+}
+
+.game-title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 5 10 0 10;
+    -fx-font-family: 'Museo Sans';
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.game-price {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 12px;
+    -fx-padding: 0 10 5 10;
+    -fx-font-family: 'Museo Sans';
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/* Cart Section */
+.cart-section {
+    -fx-background-color: rgba(26, 26, 26, 0.5);
+    -fx-min-width: 250px;
+    -fx-max-width: 250px;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+}
+
+.cart-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 10 0;
+}
+
+.cart-header Label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Museo Sans';
+}
+
+.cart-content {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-background-color: transparent;
+    -fx-fit-to-width: true;
+    -fx-min-height: 200px;
+    -fx-pref-height: 300px;
+    -fx-max-height: 400px;
+}
+
+.cart-content .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.cart-content .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.cart-content .scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.cart-content .scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cart-empty {
+    -fx-text-fill: rgba(255, 255, 255, 0.6);
+    -fx-text-alignment: center;
+    -fx-font-size: 13px;
+    -fx-wrap-text: true;
+    -fx-font-family: 'Museo Sans';
+}
+
+.cart-item {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-radius: 5;
+}
+
+.cart-item-title {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Museo Sans';
+}
+
+.cart-item-price {
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 12px;
+    -fx-font-family: 'Museo Sans';
+}
+
+.remove-button {
+    -fx-background-color: rgba(255, 0, 0, 0.3);
+    -fx-text-fill: white;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+.remove-button:hover {
+    -fx-background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Cart Summary */
+.cart-summary {
+    -fx-spacing: 15;
+    -fx-padding: 15 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1 0 0 0;
+}
+
+.cart-total {
+    -fx-spacing: 10;
+    -fx-alignment: center-right;
+}
+
+.cart-total .label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Museo Sans';
+}
+
+.total-amount {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.header {
+    -fx-padding: 0 0 30 0;
+    -fx-alignment: center-left;
+    -fx-spacing: 0;
+}
+
+.header .title {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Museo Sans';
+    -fx-alignment: center-left;
+    -fx-pref-width: 400px;
+}
+
+/* Platform Cards Styles */
+.platforms-grid {
+    -fx-padding: 10;
+}
+
+.platform-card {
+    -fx-background-radius: 20;
+    -fx-min-height: 220;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 10);
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.playstation {
+    -fx-effect: dropshadow(gaussian, rgba(0, 149, 246, 0.8), 25, 0, 0, 0);
+}
+
+.xbox {
+    -fx-effect: dropshadow(gaussian, rgba(16, 124, 16, 0.8), 25, 0, 0, 0);
+}
+
+.nintendo {
+    -fx-effect: dropshadow(gaussian, rgba(230, 0, 18, 0.8), 25, 0, 0, 0);
+}
+
+.pc {
+    -fx-effect: dropshadow(gaussian, rgba(100, 100, 100, 0.8), 25, 0, 0, 0);
+}
+
+.menu-item {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+}
+
+.menu-item:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item.active {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+

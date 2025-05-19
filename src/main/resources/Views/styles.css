@@ -1,0 +1,132 @@
+
+
+/* Estilos generales */
+.root {
+    -fx-font-family: 'Museo Sans';
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+/* Estilos para iconos */
+.icon {
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.2), 1, 0, 0, 0);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    -fx-background-color: rgba(10, 26, 65, 0.3);
+    -fx-padding: 20 15;
+    -fx-spacing: 25;
+    -fx-pref-width: 180;
+}
+
+/* Logo Styles */
+.logo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+.logo-mival {
+    -fx-text-fill: #6e85b7;
+}
+
+.logo-gamer {
+    -fx-text-fill: white;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-padding: 8 12;
+    -fx-spacing: 8;
+    -fx-alignment: center-left;
+}
+
+.search-bar .icon {
+    -fx-opacity: 0.8;
+}
+
+.search-bar .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-padding: 0;
+    -fx-font-family: 'Museo Sans';
+    -fx-font-weight: 300;
+}
+
+/* Menu Styles */
+.menu {
+    -fx-padding: 20 0;
+}
+
+.menu-container {
+    -fx-background-color: transparent;
+    -fx-padding: 0 10;
+}
+
+.menu-button {
+    -fx-background-color: rgba(73, 72, 72, 0.5);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-graphic-text-gap: 16px;
+    -fx-padding: 8px 10px;
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+    -fx-margin: 0 0 5 0;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: #c026d3;
+}
+
+/* Header Styles */
+.header {
+    -fx-padding: 0 0 30 0;
+    -fx-alignment: center-left;
+    -fx-spacing: 0;
+}
+
+.header .title {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Museo Sans';
+    -fx-alignment: center-left;
+    -fx-pref-width: 400px;
+}
+
+/* Platform Cards Styles */
+.platforms-grid {
+    -fx-padding: 10;
+}
+
+.platform-card {
+    -fx-background-radius: 20;
+    -fx-min-height: 220;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 10);
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.playstation {
+    -fx-effect: dropshadow(gaussian, rgba(0, 149, 246, 0.8), 25, 0, 0, 0);
+}
+
+.xbox {
+    -fx-effect: dropshadow(gaussian, rgba(16, 124, 16, 0.8), 25, 0, 0, 0);
+}
+
+.nintendo {
+    -fx-effect: dropshadow(gaussian, rgba(230, 0, 18, 0.8), 25, 0, 0, 0);
+}
+
+.pc {
+    -fx-effect: dropshadow(gaussian, rgba(100, 100, 100, 0.8), 25, 0, 0, 0);
+}

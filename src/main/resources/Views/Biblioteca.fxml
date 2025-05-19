@@ -40,7 +40,7 @@
             </HBox>
 
             <VBox styleClass="menu">
-                <HBox onMouseClicked="#handleBackButton" styleClass="menu-item">
+                <HBox onMouseClicked="#handleBackButton" styleClass="menu-item" >
                     <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
                         <image>
                             <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/back.png" />
@@ -49,7 +49,7 @@
                     <Label text="Volver" textFill="WHITE" />
                 </HBox>
 
-                <HBox styleClass="menu-item">
+                <HBox styleClass="menu-item" onMouseClicked="#handleInicioButton" >
                     <ImageView fitHeight="18" fitWidth="18" styleClass="icon">
                         <image>
                             <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOINICIO.png" />
@@ -112,7 +112,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/spider-man-2.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/SPIDER.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -124,7 +124,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/minecraft.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/MINECRAFT.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -136,7 +136,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/the-last-of-us.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/TLOU1.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -148,7 +148,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/resident-evil-4.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/RE4.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -160,7 +160,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/mario-kart-8-deluxe.png" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/mario-kart-8-deluxe.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -173,7 +173,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/poppy-playtime-4.png" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/POPPY4.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -185,7 +185,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/returnal.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/RETURNAL.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -197,7 +197,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/alien-isolation.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/ALIEN.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>
@@ -209,7 +209,7 @@
                             <StackPane styleClass="game-cover">
                                 <ImageView fitWidth="160" fitHeight="200" preserveRatio="false">
                                     <image>
-                                        <Image url="@images/games/god-of-war.jpg" />
+                                        <Image url="@../RecursosGlobales/imagenes segun interfaces/juegos/GODOFWAR.png" />
                                     </image>
                                 </ImageView>
                             </StackPane>

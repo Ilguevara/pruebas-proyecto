@@ -32,7 +32,7 @@
                 <TextField promptText="¿Qué deseas buscar?" prefWidth="150"/>
             </HBox>
             <!-- Botón Biblioteca -->
-            <Button layoutX="35.0" layoutY="195.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+            <Button layoutX="35.0" layoutY="195.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER" onMouseClicked="#irABiblioteca">
                 <graphic>
                     <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
                         <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOBIBLIOTECA.png" />
@@ -40,9 +40,7 @@
                 </graphic>
                 Biblioteca
             </Button>
-
-            <!-- Botón Plataforma -->
-            <Button layoutX="35.0" layoutY="255.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+            <Button layoutX="35.0" layoutY="255.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER" onMouseClicked="#irAPlataformas">
                 <graphic>
                     <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
                         <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOPLATAFORMAS.png" />
@@ -50,9 +48,7 @@
                 </graphic>
                 Plataforma
             </Button>
-
-            <!-- Botón Inicio -->
-            <Button layoutX="35.0" layoutY="315.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER">
+            <Button layoutX="35.0" layoutY="315.0" prefWidth="180.0" styleClass="menu-button" textAlignment="CENTER" onMouseClicked="#irAInicio">
                 <graphic>
                     <ImageView fitHeight="38.0" fitWidth="38.0" preserveRatio="true">
                         <Image url="@../RecursosGlobales/imagenes segun interfaces/iconos/LOGOINICIO.png" />

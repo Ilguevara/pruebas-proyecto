@@ -66,10 +66,21 @@ public class BibliotecaController implements Initializable {
     public void handleBackButton(MouseEvent event) {
         try {
             System.out.println("Volviendo a la vista principal...");
-            MivalGamerInterfaz.changeView("/com/example/mivalgamer/Main.fxml");
+            mivalgamer.app.MivalGamerInterfaz.changeView("/Views/Main.fxml");
             System.out.println("Regreso a la vista principal completado");
         } catch (Exception e) {
             System.err.println("Error al volver a la vista principal: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleInicioButton(MouseEvent event) {
+        try {
+            System.out.println("Yendo a Inicio...");
+            MivalGamerInterfaz.changeView("/Views/Inicio.fxml");
+        } catch (Exception e) {
+            System.err.println("Error al ir a Inicio: " + e.getMessage());
             e.printStackTrace();
         }
     }

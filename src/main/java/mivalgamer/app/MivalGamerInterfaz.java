@@ -29,11 +29,14 @@ public class MivalGamerInterfaz extends Application {
                     "MuseoSans-300.otf"
             ));
 
-            // Cargar pantalla de login como inicial
+            // Cargar la vista inicial (Login.fxml en este caso)
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/Login.fxml"));
-            StackPane root = (StackPane) loader.load();
+            Parent root = loader.load();  // Puede ser StackPane, BorderPane, etc.
 
-            mainContainer = root; // Asignar el contenedor raíz para manejo dinámico
+            // Usar StackPane como contenedor general, no importa la raíz del FXML
+            mainContainer = new StackPane();
+            mainContainer.getChildren().add(root);
+
             MivalGamerInterfaz.primaryStage = primaryStage;
 
             Scene scene = new Scene(mainContainer, 1280, 720);
@@ -43,18 +46,14 @@ public class MivalGamerInterfaz extends Application {
 
             primaryStage.setTitle("MivalGamer - Acceso");
             primaryStage.setScene(scene);
-
-            // Pantalla completa
             primaryStage.setFullScreen(true);
             primaryStage.setFullScreenExitHint("");
-
-            // Establecer tamaño mínimo (opcional)
             primaryStage.setMinWidth(800);
             primaryStage.setMinHeight(600);
 
-            // Hacer responsive para que ocupe siempre todo el espacio
-            root.prefWidthProperty().bind(scene.widthProperty());
-            root.prefHeightProperty().bind(scene.heightProperty());
+            // Hacer responsive
+            mainContainer.prefWidthProperty().bind(scene.widthProperty());
+            mainContainer.prefHeightProperty().bind(scene.heightProperty());
 
             primaryStage.show();
 
@@ -87,6 +86,7 @@ public class MivalGamerInterfaz extends Application {
         try {
             FXMLLoader loader = new FXMLLoader(MivalGamerInterfaz.class.getResource(fxmlPath));
             Parent newRoot = loader.load();
+
             if (mainContainer != null) {
                 mainContainer.getChildren().setAll(newRoot);
             } else if (primaryStage != null) {
@@ -98,6 +98,16 @@ public class MivalGamerInterfaz extends Application {
         } catch (Exception e) {
             System.err.println("No se pudo cambiar la vista a: " + fxmlPath);
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * Cambia la vista directamente con un nodo raíz (Parent)
+     */
+    public static void changeView(Parent root) {
+        if (mainContainer != null) {
+            mainContainer.getChildren().clear();
+            mainContainer.getChildren().add(root);
         }
     }
 

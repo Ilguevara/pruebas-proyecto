@@ -20,7 +20,7 @@
             fx:controller="mivalgamer.app.Controllers.MainController"
             prefHeight="1080.0" prefWidth="1920.0" minHeight="768.0" minWidth="1024.0">
   <stylesheets>
-    <URL value="@Estilos.css" />
+    <URL value="@playstation-styles.css" />
   </stylesheets>
 
   <!-- Capa de fondo: Imagen -->
